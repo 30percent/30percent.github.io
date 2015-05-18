@@ -1,0 +1,24 @@
+<!-- Sidebar Section -->
+<div id="sidebar_container">
+	<div class="sidebar_section">
+		<div class="sidebar_title">
+			<h4>About Me</h4>
+			<small>Hello, my name is Mark Todd!</small>
+		</div>
+		<p>I'm a Software Developer with a BS in Computer Science from Clemson.</p>
+		<div class="sidebar_link"><a href="about/" title="About Me"> About Me</a></div>
+	</div>
+	<div class="sidebar_section">
+		<div class="sidebar_title">
+			<h4>Recently Posted Projects</h4>
+		</div>
+		<ul class="post">
+			{% for post in site.posts limit:5 %}
+			<li>				<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<div class="sidebar_link"><a href="archive/" title="Archive">Archive</a></div>
+	</div>
+
+</div>

@@ -1,0 +1,86 @@
+// CSS for the pikame script
+
+ul#pikame {
+	float: right;
+}
+
+.pika_main img {
+	width: 920px;
+	background: #FFFFFF;
+	padding: 9px;
+	border: 1px solid #CCCCCC;
+}
+
+#pikame li {
+	float: left;
+	background: #f2f2f2;
+	text-align: left;
+	margin-left: 10px;
+	padding: 5px;
+	border: 1px solid #fff;
+	outline:1px solid #ccc;
+	right: 0;
+}
+
+.pika_caption {
+	float: left;
+	margin: 15px 0 0 7px;
+	font: bolder 18px Arial, Helvetica, Sans-Serif;
+	color: #333333;
+	line-height: 1.2em;
+}
+
+ul#pikame li img{
+	position: relative;
+	cursor: pointer;
+	width: 50px;
+	height: 40px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.pika_main { position: relative;}
+
+.pikachoose li {
+	overflow:hidden;
+	list-style:none;
+}
+
+.pika_play{
+	background: #FFFFFF;
+	padding: 10px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 1;
+}
+
+.pika_play a {
+	position: relative;
+	margin-left: auto;
+	cursor: pointer;
+	color: #333333;
+}
+
+.pika_play img { border:none !important; }
+
+.pika_play_previous{
+	background:url("../images/arrow-right.png") no-repeat ;
+	height:38px;
+	width:25px;
+	display:block;
+	position:absolute;
+	left:1220px;
+	top:300px;
+	cursor:pointer;
+}
+.pika_play_next {
+	background:url("../images/arrow-left.png") no-repeat ;
+	height:38px;
+	width:25px;
+	display:block;
+	position:absolute;
+	right:1220px;
+	top:300px;
+	cursor:pointer;
+	}

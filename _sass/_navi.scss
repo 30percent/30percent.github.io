@@ -1,0 +1,59 @@
+//navigation handle
+
+.navback {
+	right: 0;
+	left: 0;
+	z-index: 0;
+}
+
+#navigation {
+	background:url("images/nav_back.jpg") repeat-x ;
+	border: 1px solid #D3D3D3;
+	height: 33px;
+	height: 33px;
+	font-size: 12px;
+	margin:20px auto;
+	overflow:hidden;
+
+}
+
+#navigation ul {
+	float: left;
+	z-index: 100;
+	padding: 0;
+	list-style-type: none;
+	margin: 0 0 0 10px;
+}
+
+/*Top level list items*/
+#navigation ul li {
+	display: block;
+	float: left;
+	background:url("images/seperator.png") no-repeat right 1px;
+	padding:4px 6px 4px 0 ;
+	margin-right:8px;
+}
+
+/*Top level menu link items style*/
+#navigation ul li a {
+	display:block;
+	padding:5px 7px;
+	text-decoration:none;
+}
+
+#navigation ul li a:link, #navigation ul li a:visited {
+	color: #777777;
+}
+
+/*CSS class that's dynamically added to the currently active menu items' LI A element*/
+#navigation ul li a.selected {
+	color: #777777;
+	z-index: 100;
+}
+
+#navigation ul li a:hover {
+
+	color:#1aa5d4;
+	text-decoration:none; /*background of menu items during onmouseover (hover state)*/
+	z-index: 100;
+}

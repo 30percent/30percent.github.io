@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    <div class="all display_bg">
+      {% include top.html %}
+      <div class="container">
+        <div id="content_container">
+          <div id="content">
+              <div id="main">
+              {{ content }}
+              </div>
+          </div>
+          {% include sidebar.html %}
+        </div>
+        {% include foot.html %}
+      </div>
+    </div>
+  </body>
+</html>

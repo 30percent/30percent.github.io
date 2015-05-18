@@ -1,0 +1,42 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.all {
+	max-width: 60rem;
+	margin: auto;
+}
+
+.container {
+	background:url("images/border-bg.gif") repeat ;
+	margin: 2em auto;
+	border:1px solid #FFFFFF;
+	outline:1px solid #D8D8D8;
+	padding:1rem;
+	text-shadow:1px 1px 0 #FFFFFF;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+#content_container {
+	background:#f4f4f4;
+	border:1px solid #CCCCCC;
+	outline:1px solid #FFFFFF;
+}
+
+* html #content_container {
+	display:inline-block;
+}
+
+#content {
+	display:inline-block;
+	padding-left: 2em;
+	max-width: 55em;
+	//border-right:1px solid #DDDDDD;
+}
+
+* html #content{
+	background:#f4f4f4;
+}

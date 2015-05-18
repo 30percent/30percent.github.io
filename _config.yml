@@ -1,0 +1,38 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Mark Todd's Portfolio
+tagline:             Mark Todd's Portfolio
+url:                 #
+paginate:            3
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+highlighter:	rouge
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/30percent/30percent.github.io
+
+#Nav List
+nav_list:
+  Home: /
+  About: /about/
+  Archive: /archive/

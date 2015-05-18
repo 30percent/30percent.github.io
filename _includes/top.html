@@ -1,0 +1,23 @@
+
+<header class="masthead">
+	<div id="titleheader_bg">
+	        <h3 class="masthead-title">
+	          <a class="logo" href="{{ site.baseurl }}/" title="Home"></a>
+	        </h3>
+    </div>
+    <div class="navback">
+		<div id="navigation">
+			<ul>
+				{% for page in site.nav_list %}
+				<li><a href="{{ page[1] }}" title="{{ page[0] }}">{{ page[0] }}</a></li>
+				{% endfor %}
+			</ul>
+				<!--<div class="search">
+					<form name="search" method="post" action="">
+						<input id="s" type="text" name="search" />
+						<input type="submit" id="search_btn" value="Search"/>
+					</form>
+				</div>-->
+		</div>
+	</div>
+</header>
