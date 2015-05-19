@@ -25,10 +25,14 @@
 }
 
 // Meta data line below post title
-.post-date {
-  display: block;
+
+.metadata {
   margin-top: -.5rem;
   margin-bottom: 1rem;
+  display: block;
+}
+
+.post-date {
   color: #9a9a9a;
 }
 

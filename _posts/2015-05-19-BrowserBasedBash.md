@@ -1,6 +1,7 @@
 ---
 layout: post
 title: BrowserBasedBash (InProgress)
+projectlink: http://github.com/30percent/BrowserBasedBash
 ---
 
 *[BrowserBasedBash](https://github.com/30percent/BrowserBasedBash) is a website currently in development that attempts to safely allow user based access to Bash scripting on a personal server.*

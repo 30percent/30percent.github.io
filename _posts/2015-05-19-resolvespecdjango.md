@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resolve Specification in Django (InProgress)
+projectlink: https://github.com/30percent/ResolveSpecDjango
 ---
 
 *[Resolve Specification in Django](https://github.com/30percent/ResolveSpecDjango) is a website currently in development intended to be used as the specification for the RESOLVE verification language*

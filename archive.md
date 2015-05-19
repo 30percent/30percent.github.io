@@ -3,8 +3,11 @@ layout: page
 title: Archive
 ---
 
-## Blog Posts
+## Project Archive
 
 {% for post in site.posts %}
-  * [ {{ post.title }} ]({{ post.url }})
+  * {{ post.title }}: 
+    * [Information Post]({{ post.url }}) 
+    {% if post.projectlink %}* [Source Code]({{ post.projectlink }}) {% endif %}
+	
 {% endfor %}
