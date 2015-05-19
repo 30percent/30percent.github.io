@@ -8,7 +8,7 @@ relative_permalinks: true
 title:				Mark Todd's Portfolio
 tagline:			Mark Todd's Portfolio
 url:				#
-baseurl:			""
+baseurl:			http://30percent.github.io/
 
 #Postings
 paginate:			3
@@ -27,9 +27,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Todd
-  url:               http://30percent.github.io
-  email:             markdotto@gmail.com
+  name:				Mark Todd
+  url:				http://30percent.github.io/
+  email:			markdotto@gmail.com
 
 # Custom vars
 version:             1.0.0
