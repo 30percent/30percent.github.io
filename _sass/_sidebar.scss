@@ -15,6 +15,7 @@
 	margin-left: 1px;
 	border-top: 1px solid #FFFFFF;
 	border-bottom: 1px solid #D5D5D5;
+	overflow: auto;
 }
 
 .sidebar_title {
@@ -28,4 +29,26 @@
 .sidebar_link {
 	text-align: right;
 	font-style: italic;
+}
+
+#sidebar_container img {
+	max-width: 9em;
+}
+
+.right_column {
+	margin-top: .5em;
+	float: right;
+	text-align: right;
+	line-height: 1.7 em;
+	margin-bottom: .1em;
+}
+
+.left_column {
+	margin-top: .5em;
+	float: left;
+	text-align: left;
+	line-height: 1.7em;
+	margin-bottom: .1em;
+	clear: left;
+	font-weight: bolder;
 }

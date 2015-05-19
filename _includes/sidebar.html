@@ -2,11 +2,20 @@
 <div id="sidebar_container">
 	<div class="sidebar_section">
 		<div class="sidebar_title">
-			<h4>About Me</h4>
+			<img src="images/me.jpg" class="sidebar_img" alt="Image of Mark Todd"/>
+			<h4 style="margin-top: 1em">About Me</h4>
 			<small>Hello, my name is Mark Todd!</small>
 		</div>
 		<p>I'm a Software Developer with a BS in Computer Science from Clemson.</p>
+
 		<div class="sidebar_link"><a href="about/" title="About Me"> About Me</a></div>
+	</div>
+	<div class="sidebar_section">
+		<h4>Contact Me</h4>
+		<small> Contact me at anytime if you have any questions.</small>
+		<div class="left_column">Email:</div><div class="right_column">ddotkram@gmail.com</div>
+		<div class="left_column">Github:</div><div class="right_column"><a href="http://github.com/30percent">github.com/30percent</a></div>
+		<div class="left_column">LinkedIn:</div><div class="right_column"><a href="https://www.linkedin.com/pub/mark-todd/b9/773/349">Mark Todd</a></div>
 	</div>
 	<div class="sidebar_section">
 		<div class="sidebar_title">
@@ -14,7 +23,8 @@
 		</div>
 		<ul class="post">
 			{% for post in site.posts limit:5 %}
-			<li>				<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+			<li>
+				<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
 			</li>
 			{% endfor %}
 		</ul>
