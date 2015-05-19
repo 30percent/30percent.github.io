@@ -5,11 +5,16 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Mark Todd's Portfolio
-tagline:             Mark Todd's Portfolio
-url:                 #
-paginate:            3
-baseurl:             ""
+title:				Mark Todd's Portfolio
+tagline:			Mark Todd's Portfolio
+url:				#
+baseurl:			""
+
+#Postings
+paginate:			3
+paginate_path:		"project/page:num"
+excerpt_separator:	<!--postbreak-->
+
 
 # Assets
 #
@@ -22,8 +27,8 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
+  name:              Mark Todd
+  url:               http://30percent.github.io
   email:             markdotto@gmail.com
 
 # Custom vars
@@ -36,3 +41,5 @@ nav_list:
   Home: /
   About: /about/
   Archive: /archive/
+
+archive: /archive/
