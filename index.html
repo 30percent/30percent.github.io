@@ -14,8 +14,8 @@ title: Home
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.excerpt }}
-    <a class="read_more" href="{{ site.baseurl }}{{ post.url }}">Read More!</a>
+    <div class="excerpt">{{ post.excerpt }}</div>
+    <b><a class="read_more" href="{{ site.baseurl }}{{ post.url }}">Read More!</a></b>
   </article>
   {% endfor %}
 </div>
