@@ -15,7 +15,8 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 * [RESOLVE through Clemson](http://www.cs.clemson.edu/resolve/): A project whose goal is "of a future in which no production software is considered properly engineered unless it has been fully specified, and fully verified as satisfying these specifications".
 
 ## Languages
-#### Comfortable
+
+### Comfortable
 * Standard Imperative/OOP:
   * C
   * Java
@@ -28,7 +29,8 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
   * Javascript
   * MySQL
   * Markdown, Liquid
-#### Cursory Experience
+  
+### Cursory Experience
 * OCAML (functional)
 * Haskell (functional)
 * Prolog (declarative)
