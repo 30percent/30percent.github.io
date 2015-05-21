@@ -16,7 +16,7 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 
 ## Languages
 
-### Comfortable
+#### Comfortable
 * Standard Imperative/OOP:
   * C
   * Java
@@ -30,7 +30,7 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
   * MySQL
   * Markdown, Liquid
   
-### Cursory Experience
+#### Cursory Experience
 * OCAML (functional)
 * Haskell (functional)
 * Prolog (declarative)
