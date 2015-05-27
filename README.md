@@ -1,4 +1,4 @@
-##About the site:
+##About the site
 
 ####Attributions:
 * Original site layout design by: [BloggerzBible](http://bloggerzbible.com/)
