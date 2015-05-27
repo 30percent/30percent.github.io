@@ -4,13 +4,14 @@ layout: post
 projectlink: https://github.com/30percent/windowfocus
 ---
 
-WindowFocus extends [OpenGazer(http://www.inference.phy.cam.ac.uk/opengazer/)], an open source gaze tracking software that uses any standard webcam, to change window focus based on where the user is looking.
+WindowFocus extends [OpenGazer](http://www.inference.phy.cam.ac.uk/opengazer/), an open source gaze tracking software that uses any standard webcam, to change window focus based on where the user is looking.
 
 <!--postbreak-->
 
 ### Description
 
-Using Python's socket library to capture the results from a running [OpenGazer(http://www.inference.phy.cam.ac.uk/opengazer/)] process, the software in real time changes between windows based on where the user is looking. To do this, a couple of addition libraries are needed:  
+Using Python's socket library to capture the results from a running [OpenGazer](http://www.inference.phy.cam.ac.uk/opengazer/) process, the software in real time changes between windows based on where the user is looking. To do this, a couple of addition libraries are needed:
+
 * wnck
 * Qt through PySide
 
