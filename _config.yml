@@ -43,10 +43,11 @@ nav_list:
   About: /about/
   Archive: /archive/
   Resume: /resume/
+  InterviewQs: /interview/
 
 archive: /archive/
 
 #Collections
 collections:
-  testpages:
+  interviewqs:
     output: true

@@ -1,16 +1,13 @@
 ---
 title: Interviews&#58; Reversing a String
-layout: temppost
+layout: interviewpost
 category: blog
+excerpt: Let's have a look at a very simple example question and get some results in python.
 ---
-
-Let's have a look at a very simple example question and get some results in python.
-
-<!--postbreak-->
 
 ### Question:
 
-*Reverse a string*
+*Simply reverse a string*
 
 #### Solutions 
 
