@@ -16,7 +16,7 @@ paginate_path:		"project/page:num"
 excerpt_separator:	<!--postbreak-->
 
 # Build Settings
-highlighter: true
+#highlighter: true
 
 # Assets
 #
