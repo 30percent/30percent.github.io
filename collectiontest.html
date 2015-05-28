@@ -1,0 +1,22 @@
+---
+layout: default
+title: Collections Test
+---
+
+<h1>Tests!</h1>
+<div class="posts">
+  {% for post in site.testpages %}
+    <article class="post">
+      <h3 class="post-title">
+        <a href="{{ site.testpages.relative_directory }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h3>
+
+      <div class="metadata">{% if post.projectlink %} &raquo; <a href="{{ post.projectlink }}">Source Code</a> {% endif %} </div>
+
+      <div class="excerpt">{{ post.excerpt }}</div>
+      <b><a class="read_more" href="{{ site.baseurl }}{{ post.url }}">Read More!</a></b>
+    </article>
+  {% endfor %}
+</div>

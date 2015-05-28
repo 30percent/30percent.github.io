@@ -58,6 +58,9 @@ Summary of Responsibilities:
 * [**WindowFocus**](https://github.com/30percent/windowfocus): Uses OpenGazer to allow for window focus switching based on eye gaze through webcam (Python)
 * [**ProcessMultithreading**](https://github.com/30percent/InProcessMultiThreading): User-level multithreading library
 
+***Languages***  
+Python, Java, C, PHP, jQuery/JS, HTML, BASH
+
 ***Organizations***
 
 * 2010 - 2013: Player in _Clemson University Classical Guitar Ensemble_
