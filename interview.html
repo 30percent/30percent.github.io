@@ -3,21 +3,24 @@ layout: default
 title: Interview Questions
 ---
 
-<h1>Tests!</h1>
+<h1>Programming Interview Question Examples:</h1>
 <div class="posts">
-  {% assign posts = site.interviewqs | sort: 'index' | reverse %}
-  {% for post in posts %}
-    <article class="post">
-      <h3 class="post-title">
-        <a href="{{ site.interviewqs.relative_directory }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h3>
+  <ol class="questions">
+    {% assign posts = site.interviewqs | sort: 'index' %}
+    {% for post in posts %}
+      <li>
+        <b>
+          <a href="{{ site.interviewqs.relative_directory }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </b>
+        <ul>
+          <li><div class="metadata">{% if post.projectlink %} &raquo; <a href="{{ post.projectlink }}">Source Code</a> {% endif %} </div>
 
-      <div class="metadata">{% if post.projectlink %} &raquo; <a href="{{ post.projectlink }}">Source Code</a> {% endif %} </div>
-
-      <div class="excerpt">{{ post.excerpt }}</div>
-      <b><a class="read_more" href="{{ site.interviewqs.relative_directory }}{{ post.url }}">Read More!</a></b>
-    </article>
-  {% endfor %}
+          <div class="excerpt">{{ post.excerpt }}</div></li>
+        </ul>
+        <b><a class="read_more" href="{{ site.interviewqs.relative_directory }}{{ post.url }}">Read More!</a></b>
+      </li>
+    {% endfor %}
+  </ol>
 </div>
