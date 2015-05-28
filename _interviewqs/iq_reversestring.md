@@ -2,7 +2,9 @@
 title: Interviews&#58; Reversing a String
 layout: interviewpost
 category: blog
-excerpt: Let's have a look at a very simple example question and get some results in python.
+excerpt: Let's have a look simply reversing a string in python.
+index: 0
+gistlink: https://gist.github.com/30percent/227b4bfa2960f5b131d0
 ---
 
 ### Question:
@@ -14,7 +16,7 @@ excerpt: Let's have a look at a very simple example question and get some result
 To start out, I went with a needlessly complicated, naive approach:
 
 {% highlight python %}
-def reverseString(input):
+def revStrLoop(input):
 	outList = [0]*len(input)
 	for i, char in enumerate(input):
 		outList[len(input)-i-1] = char

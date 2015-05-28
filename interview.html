@@ -5,7 +5,8 @@ title: Interview Questions
 
 <h1>Tests!</h1>
 <div class="posts">
-  {% for post in site.interviewqs %}
+  {% assign posts = site.interviewqs | sort: 'index' %}
+  {% for post in posts %}
     <article class="post">
       <h3 class="post-title">
         <a href="{{ site.interviewqs.relative_directory }}{{ post.url }}">
