@@ -4,10 +4,10 @@ layout: default
 
 <article class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <div class="metadata">{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time> {% endif %}{% if page.projectlink %} &raquo; <a href="{{ page.gistlink }}">Gist Link</a> {% endif %} </div>
+  <div class="metadata">{% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time> {% endif %}{% if page.gistlink %} &raquo; <a href="{{ page.gistlink }}">Gist Link</a> {% endif %} </div>
   {{ content }}
 
-  <p style="align: right"><i><a href="{{ page.gistlink }}">Click to view the gist</a>
+  <p style="text-align: right"><i><a href="{{ page.gistlink }}">Click to view the gist</a>
 </article>
 <!--
 <aside class="related">

@@ -5,7 +5,7 @@ title: Interview Questions
 
 <h1>Tests!</h1>
 <div class="posts">
-  {% assign posts = site.interviewqs | sort: 'index' %}
+  {% assign posts = site.interviewqs | sort: 'index' | reverse %}
   {% for post in posts %}
     <article class="post">
       <h3 class="post-title">
