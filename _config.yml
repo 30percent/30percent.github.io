@@ -8,7 +8,7 @@ relative_permalinks: true
 title:				Mark Todd's Portfolio
 tagline:			Mark Todd's Portfolio
 #url:				#
-#baseurl:			http://30percent.github.io/
+baseurl:			http://30percent.github.io/
 
 #Postings
 paginate:			3
@@ -16,7 +16,7 @@ paginate_path:		"project/page:num"
 excerpt_separator:	<!--postbreak-->
 
 # Build Settings
-highlighter: true
+#highlighter: true
 
 # Assets
 #
