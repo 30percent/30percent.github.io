@@ -3,11 +3,18 @@ layout: default
 title: Interview Questions
 ---
 
-<h1>Programming Interview Question Examples:</h1>
+<h3>Programming Interview Question Examples:</h3>
 <div class="posts">
-  <ol class="questions">
-    {% assign posts = site.interviewqs | sort: 'index' %}
+  <ul class="categories">
+    {% assign posts = site.interviewqs | sort: 'category' %}
     {% for post in posts %}
+      {% if curCategory == null %} {% assign curCategory = post.category %}
+        <li><b>{{post.category}}</b><ol> 
+      {% endif %}
+      {% if curCategory != post.category}
+        </ol></li>
+        <li><b>{{post.category}}</b><ol>
+      {% endif %}
       <li>
         <b>
           <a href="{{ site.interviewqs.relative_directory }}{{ post.url }}">
@@ -19,8 +26,10 @@ title: Interview Questions
 
           <div class="excerpt">{{ post.excerpt }}</div></li>
         </ul>
-        <b><a class="read_more" href="{{ site.interviewqs.relative_directory }}{{ post.url }}">Read More!</a></b>
+        <!--<b><a class="read_more" href="{{ site.interviewqs.relative_directory }}{{ post.url }}">Read More!</a></b>-->
       </li>
     {% endfor %}
-  </ol>
+    </li>
+    </ol>
+    </ul>
 </div>
