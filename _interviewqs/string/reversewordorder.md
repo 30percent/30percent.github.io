@@ -1,7 +1,7 @@
 ---
 layout: interviewpost
 title: Interviews&#58; Reverse Word Order
-category: string
+category: String
 excerpt: We've reversed a whole string, can we no just swap the words?
 index: 1
 gistlink: https://gist.github.com/30percent/632652d7abdbf675ff5a

@@ -1,7 +1,7 @@
 ---
 title: Interviews&#58; Reversing a String
 layout: interviewpost
-category: string
+category: String
 excerpt: Let's have a look simply reversing a string in python.
 index: 0
 gistlink: https://gist.github.com/30percent/227b4bfa2960f5b131d0

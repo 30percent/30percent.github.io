@@ -11,7 +11,7 @@ title: Interview Questions
       {% if curCategory == null %} {% assign curCategory = post.category %}
         <li><b>{{post.category}}</b><ol> 
       {% endif %}
-      {% if curCategory != post.category}
+      {% if curCategory != post.category %}
         </ol></li>
         <li><b>{{post.category}}</b><ol>
       {% endif %}

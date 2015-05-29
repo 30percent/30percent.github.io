@@ -1,7 +1,7 @@
 ---
 title: Interviews&#58; Testing Permutation
 layout: interviewpost
-category: string
+category: String
 excerpt: What can you do if you want to test string permutation?
 index: 2
 gistlink: https://gist.github.com/30percent/582b6943dad32bc5f83b
