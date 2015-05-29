@@ -16,7 +16,7 @@ title: Home
       <div class="metadata"><time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time> {% if post.projectlink %} &raquo; <a href="{{ post.projectlink }}">Source Code</a> {% endif %} </div>
 
       <div class="excerpt">{{ post.excerpt }}</div>
-      <b><a class="read_more" href="{{ post.url }}">Read More!</a></b>
+      <b><a class="read_more" href={% if post.swapurl %}"{{post.swapurl}}" {% else %} "{{ post.url }} {% endif %}">Read More!</a></b>
     </article>
     {% endif %}
   {% endfor %}

@@ -9,11 +9,11 @@ title: Interview Questions
     {% assign posts = site.interviewqs | sort: 'category' %}
     {% for post in posts %}
       {% if curCategory == null %} {% assign curCategory = post.category %}
-        <li><b>{{post.category}}</b><ol> 
+        <li><h5>{{post.category}}</h5><ol> 
       {% endif %}
       {% if curCategory != post.category %}
         </ol></li>
-        <li><b>{{post.category}}</b><ol>
+        <li><h5>{{post.category}}</h5><ol>
       {% endif %}
       <li>
         <b>
