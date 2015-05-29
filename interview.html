@@ -12,6 +12,7 @@ title: Interview Questions
         <li><h5>{{post.category}}</h5><ol> 
       {% endif %}
       {% if curCategory != post.category %}
+        {% assign curCategory = post.category %}
         </ol></li>
         <li><h5>{{post.category}}</h5><ol>
       {% endif %}
