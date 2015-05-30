@@ -29,7 +29,7 @@ def removeDuplicates(myNode):
             toRemove = None
         else:
             tempNode = toRemove
-{% highlight %}
+{% endhighlight %}
 
 Rather than look over entire list from beginning each time, I assume this function will be run on each element in sequence. This allows for significantly less searching as we know no previous element can match the current element as it has already been tested. To ensure the function is run on each element, I pass the function to this:
 
