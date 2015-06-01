@@ -32,7 +32,9 @@ author:
   url:				http://30percent.github.io/
   email:			ddotkram@gmail.com
   linkedin:   https://www.linkedin.com/pub/mark-todd/b9/773/349
-  github:     https://github.com/30percent?tab=repositories
+  github:     
+    link: https://github.com/30percent?tab=repositories
+    user: 30percent
 
 # Custom vars
 version:             1.0.0
