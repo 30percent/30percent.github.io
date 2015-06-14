@@ -1,5 +1,6 @@
-var lowColor = [0, 255, 255];
-var medColor = [0, 0, 255];
+//var lowColor = [0, 255, 255];
+var lowColor = [0, 208, 45];
+var medColor = [50, 50, 255];
 var highColor = [255, 128, 0];
 
 var experience = {
@@ -31,7 +32,7 @@ $(window).load(function() {
             }
         });
         expBar.animate(progress, {
-                from: {color: "#606060"},
+                from: {color: "#f7f7f7"},
                 to: {color: setColor}            
         });
      });
@@ -56,8 +57,9 @@ function rgbArrayToString(rgb) {
 }
 
 function barColor(progress) {
-	if(progress >= .5){
-		return interpolateColor(medColor, highColor, progress - .5);
-	}
-    return interpolateColor(lowColor, medColor, progress);
+    var intCol = interpolateColor(lowColor, medColor, progress*2);
+    if(progress > .5){
+        intCol = interpolateColor(intCol, highColor, (1-progress)*2);
+    }
+    return intCol;
 }
