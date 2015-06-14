@@ -42,7 +42,7 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 		<li> Web-Based
 			<div class="skill_list">
 				<div><i>HTML</i><div class="experience" data-info="2" data-name="HTML"></div></div>
-				<div><i>Javascript/jQuery</i><div class="experience" data-info="1.5" data-name="Javascript/jQuery"></div></div>
+				<div><i>JS/jQuery</i><div class="experience" data-info="1.5" data-name="JS/jQuery"></div></div>
 				<div><i>CSS/SASS</i><div class="experience" data-info="1.5" data-name="CSS/SASS"></div></div>
 				<div><i>MySQL</i><div class="experience" data-info="1.5" data-name="MySQL"></div></div>
 			</div>

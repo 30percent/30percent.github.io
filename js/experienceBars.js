@@ -23,8 +23,8 @@ $(window).load(function() {
             easing: 'easeOut',
             strokeWidth: 5,
             text: {
-                //value: experience[result],
-                color: '#000000'
+                value: '+',
+                color: '#A8A8A8'
             },
             step: function(state, bar){ 
                  bar.path.setAttribute('stroke', state.color);
