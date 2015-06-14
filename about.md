@@ -1,6 +1,10 @@
 ---
 layout: page
 title: About Me
+skills:
+  C:
+    level: 3
+    description: Coursework and Projects included parallel programming through threads and forks, structure-based design, n-dimensional pointers, distributed programming using OpenMP and MPI, linux library shims, code-translation, and image processing.
 ---
 
 <p class="message">
@@ -14,21 +18,39 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 ## Associated Projects
 * [RESOLVE through Clemson](http://www.cs.clemson.edu/resolve/): A project whose goal is "of a future in which no production software is considered properly engineered unless it has been fully specified, and fully verified as satisfying these specifications".
 
-## Languages
+## Languages Experience
 
-#### Comfortable
-* Standard Imperative/OOP:
-  * C
-  * Java
-* Scripting:
-  * Python (both as script and as OOP)
-  * BASH
-  * Awk
-* Web-based:
-  * PHP
-  * Javascript
-  * MySQL
-  * Markdown, Liquid
+<div style="width:45em">
+	<ul>
+		<li>Imperative/OOP Languages:
+			<div class="skill_list">
+				<div><i>C</i><div class="experience" data-info="2.5" data-name="C"></div></div>
+				<div><i>Java</i><div class="experience" data-info="1" data-name="Java"></div></div>
+				<div><i>Python</i><div class="experience" data-info="1.5" data-name="Python"></div></div>
+			</div>
+
+			<div style="clear:both;"></div> 
+		</li>
+		<li> Scripting Languages
+			<div class="skill_list">
+				<div><i>PHP</i><div class="experience" data-info="1.5" data-name="PHP"></div></div>
+				<div><i>BASH</i><div class="experience" data-info="2" data-name="BASH"></div></div>
+				<div><i>GAwk</i><div class="experience" data-info="2" data-name="GAwk"></div></div>
+			</div>
+			<div style="clear:both;"></div> 
+		</li>
+		<li> Web-Based
+			<div class="skill_list">
+				<div><i>HTML</i><div class="experience" data-info="2" data-name="HTML"></div></div>
+				<div><i>Javascript/jQuery</i><div class="experience" data-info="1.5" data-name="Javascript/jQuery"></div></div>
+				<div><i>CSS/SASS</i><div class="experience" data-info="1.5" data-name="CSS/SASS"></div></div>
+				<div><i>MySQL</i><div class="experience" data-info="1.5" data-name="MySQL"></div></div>
+			</div>
+			<div style="clear:both;"></div> 
+		</li>
+	</ul>
+	<div style="clear:both;"></div> 
+</div>
   
 #### Cursory Experience
 * OCAML (functional)

@@ -126,3 +126,21 @@ a.logo {
 .nobr {
   whitespace: nowrap;
 }
+
+.experience > svg {
+  display: inline;
+  width: 5em;
+  margin-bottom: 1em;
+  margin-top: .9em;
+}
+
+div.skill_list {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+div.skill_list > div{
+  display: inline;
+  float: left;
+  margin-right: 5em;
+}

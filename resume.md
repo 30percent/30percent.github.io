@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Resume
+title:
 ---
-
 # Mark Todd
 
 #### Lake Worth, Fl 33460
