@@ -20,24 +20,41 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 
 ## Languages Experience
 
+<script src="/js/progressbar.js"></script>
+<script src="/js/experienceBars.js"></script>
+
+<script>
+	var expByLanguage = {
+	    C: "Coursework and Projects included parallel programming through threads and forks, structure-based design, n-dimensional pointers, distributed programming using OpenMP and MPI, <a href='https://github.com/30percent/InProcessMultiThreading'>linux library shims</a>, <a href='https://github.com/30percent/C-Translation'>code-translation</a>, and image processing.",
+	    Java: "Coursework included TCP and UDP communication, parallel programming through threads and forks, and OOP design patterns."
+	};
+	$(window).load(function() {
+		$(".experience").each(function(){
+			(typeof this.dataset.name !== 'undefined' && (typeof expByLanguage[this.dataset.name] !== 'undefined')) ? expDef = expByLanguage[this.dataset.name] : expDef = "";
+			createExpBarForDiv(this, expDef);
+		});
+	});
+</script>
+
 <div style="width:45em">
 	<ul>
 		<li>Imperative/OOP Languages:
 			<div class="skill_list">
 				<div><i>C</i><div class="experience" data-info="2.5" data-name="C"></div></div>
-				<div><i>Java</i><div class="experience" data-info="1" data-name="Java"></div></div>
+				<div><i>Java</i><div class="experience" data-info="1.5" data-name="Java"></div></div>
 				<div><i>Python</i><div class="experience" data-info="1.5" data-name="Python"></div></div>
+				<div class="exp-context" style="clear:both;"><p></p></div>
 			</div>
-
-			<div style="clear:both;"></div> 
+				<div style="clear:both;"></div>
 		</li>
 		<li> Scripting Languages
 			<div class="skill_list">
 				<div><i>PHP</i><div class="experience" data-info="1.5" data-name="PHP"></div></div>
 				<div><i>BASH</i><div class="experience" data-info="2" data-name="BASH"></div></div>
 				<div><i>GAwk</i><div class="experience" data-info="2" data-name="GAwk"></div></div>
+				<div class="exp-context" style="clear:both;"><p></p></div>
 			</div>
-			<div style="clear:both;"></div> 
+			<div style="clear:both;"></div>
 		</li>
 		<li> Web-Based
 			<div class="skill_list">
@@ -45,8 +62,9 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 				<div><i>JS/jQuery</i><div class="experience" data-info="1.5" data-name="JS/jQuery"></div></div>
 				<div><i>CSS/SASS</i><div class="experience" data-info="1.5" data-name="CSS/SASS"></div></div>
 				<div><i>MySQL</i><div class="experience" data-info="1.5" data-name="MySQL"></div></div>
+				<div class="exp-context" style="clear:both;"><p></p></div>
 			</div>
-			<div style="clear:both;"></div> 
+			<div style="clear:both;"></div>
 		</li>
 	</ul>
 	<div style="clear:both;"></div> 

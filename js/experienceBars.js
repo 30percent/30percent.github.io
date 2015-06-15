@@ -11,13 +11,13 @@ var experience = {
 	4: "Expert",
 };
 
-$(window).load(function() {
-      $(".experience").each(function(){
-        var result = parseFloat(this.dataset.info);
+
+
+function createExpBarForDiv(div, expDef){
+        var result = parseFloat(div.dataset.info);
         var progress = result / 5;
-        var curElement = this;
         var setColor = rgbArrayToString(barColor(progress));
-        var expBar = new ProgressBar.Circle(this, {
+        var expBar = new ProgressBar.Circle(div, {
             color: '#ddd',
             trailColor: '#f7f7f7',
             duration: 1000,
@@ -35,8 +35,10 @@ $(window).load(function() {
                 from: {color: "#f7f7f7"},
                 to: {color: setColor}            
         });
-     });
-});
+        var childPara = div.getElementsByClassName('progressbar-text')[0];
+        childPara.onclick = extendInfo;
+        childPara.dataset.info = expDef;
+}
 
 // Interpolate value between two colors.
 // Value is number from 0-1. 0 Means color A, 0.5 middle etc.
@@ -62,4 +64,43 @@ function barColor(progress) {
         intCol = interpolateColor(intCol, highColor, (1-progress)*2);
     }
     return intCol;
+}
+
+function extendInfo(element){
+    //set all to +, then act on this ele
+    var containerListDiv = getParentWithClass(this, "skill_list");
+    var defPara = containerListDiv.getElementsByClassName('exp-context')[0].getElementsByTagName("p")[0];
+    
+
+    $(".experience").each(function(){
+        var childPara = this.getElementsByClassName('progressbar-text')[0];
+        hideDefInfo(childPara);
+    });
+    if(this.innerHTML === "-" || (typeof this.dataset.info === 'undefined') || this.dataset.info === ""){
+        hideDefInfo(this);
+    }
+    else{
+        this.innerHTML = "-";
+        defPara.innerHTML = this.dataset.info;
+        defPara.classList.add("has-contents");
+    }
+}
+
+function hideDefInfo(element){
+    element.innerHTML = "+";
+    var containerListDiv = getParentWithClass(element, "skill_list");
+    var defPara = containerListDiv.getElementsByClassName('exp-context')[0].getElementsByTagName("p")[0];
+
+    defPara.innerHTML = "";
+    defPara.classList.remove("has-contents");
+}
+
+function getParentWithClass(element, className){
+    var curParent = element.parentNode;
+    while((typeof curParent !== 'undefined')){
+        if(curParent.classList.contains("skill_list"))
+            return curParent;
+        curParent = curParent.parentNode;
+    };
+    return undefined;
 }
