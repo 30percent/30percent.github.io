@@ -11,12 +11,14 @@ var experience = {
 	4: "Expert",
 };
 
-
+var emptyText = "*";
 
 function createExpBarForDiv(div, expDef){
         var result = parseFloat(div.dataset.info);
         var progress = result / 5;
         var setColor = rgbArrayToString(barColor(progress));
+        var intText = (expDef.length > 0) ? "+" : emptyText;
+        console.log("expDef: " + parseInt(expDef.length) + " text: " + intText);
         var expBar = new ProgressBar.Circle(div, {
             color: '#ddd',
             trailColor: '#f7f7f7',
@@ -24,7 +26,7 @@ function createExpBarForDiv(div, expDef){
             easing: 'easeOut',
             strokeWidth: 5,
             text: {
-                value: '+',
+                value: intText,
                 color: '#A8A8A8'
             },
             step: function(state, bar){ 
@@ -70,11 +72,13 @@ function extendInfo(element){
     //set all to +, then act on this ele
     var containerListDiv = getParentWithClass(this, "skill_list");
     var defPara = containerListDiv.getElementsByClassName('exp-context')[0].getElementsByTagName("p")[0];
-    
+    var tempThis = this;
 
     $(".experience").each(function(){
-        var childPara = this.getElementsByClassName('progressbar-text')[0];
-        hideDefInfo(childPara);
+            var childPara = this.getElementsByClassName('progressbar-text')[0];
+        if(childPara !== tempThis){
+            hideDefInfo(childPara);
+        }
     });
     if(this.innerHTML === "-" || (typeof this.dataset.info === 'undefined') || this.dataset.info === ""){
         hideDefInfo(this);
@@ -87,7 +91,7 @@ function extendInfo(element){
 }
 
 function hideDefInfo(element){
-    element.innerHTML = "+";
+    (element.innerHTML !== emptyText) ? element.innerHTML = "+" : true;
     var containerListDiv = getParentWithClass(element, "skill_list");
     var defPara = containerListDiv.getElementsByClassName('exp-context')[0].getElementsByTagName("p")[0];
 
