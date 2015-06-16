@@ -1,0 +1,31 @@
+.experience > svg {
+  display: inline;
+  width: 3em;
+  margin-bottom: 1em;
+  margin-top: .9em;
+}
+
+.experience > p {
+  font-size: 2em;
+}
+
+div.skill_list {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+div.skill_list > div{
+  display: inline;
+  float: left;
+  margin-right: 5em;
+  text-align: center;
+}
+
+.experience {
+  cursor: pointer;
+}
+
+.exp-context .has-contents {
+    border: .01em solid black;
+    padding: .5em;
+}
