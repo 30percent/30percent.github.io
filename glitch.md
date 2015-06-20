@@ -15,9 +15,9 @@ title: Glitch Gallery
 </style>
 <div class="galleria">
 	<img src="/images/glitch/roots/roots.jpg">
-	<img src="/images/glitch/roots/set1.png">
-	<img src="/images/glitch/roots/set4.png">
-	<img src="/images/glitch/roots/set3.png">
+	<img src="/images/glitch/roots/set1.jpg">
+	<img src="/images/glitch/roots/set4.jpg">
+	<img src="/images/glitch/roots/set3.jpg">
 </div>
 
 
