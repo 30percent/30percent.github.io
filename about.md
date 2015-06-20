@@ -1,10 +1,6 @@
 ---
 layout: page
 title: About Me
-skills:
-  C:
-    level: 3
-    description: Coursework and Projects included parallel programming through threads and forks, structure-based design, n-dimensional pointers, distributed programming using OpenMP and MPI, linux library shims, code-translation, and image processing.
 ---
 
 <p class="message">
