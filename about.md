@@ -20,22 +20,6 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 
 ## Languages Experience
 
-<script src="/js/progressbar.js"></script>
-<script src="/js/experienceBars.js"></script>
-
-<script>
-	var expByLanguage = {
-	    C: "Coursework and Projects included parallel programming through threads and forks, structure-based design, n-dimensional pointers, distributed programming using OpenMP and MPI, <a href='https://github.com/30percent/InProcessMultiThreading'>linux library shims</a>, <a href='https://github.com/30percent/C-Translation'>code-translation</a>, and image processing.",
-	    Java: "Coursework included TCP and UDP communication, parallel programming through threads and forks, and OOP design patterns."
-	};
-	$(window).load(function() {
-		$(".experience").each(function(){
-			(typeof this.dataset.name !== 'undefined' && (typeof expByLanguage[this.dataset.name] !== 'undefined')) ? expDef = expByLanguage[this.dataset.name] : expDef = "";
-			createExpBarForDiv(this, expDef);
-		});
-	});
-</script>
-
 <div style="width:45em">
 	<ul>
 		<li>Imperative/OOP Languages:
@@ -81,3 +65,23 @@ During college I was a paid Undergraduate Researcher for the Reusable Software R
 * I play the guitar, banjo, and ukelele, currently participating every week in the Pickers in the Round at a local bar. During college I was a member of a guitar ensemble.
 * I enjoying hiking and have had the opportunity to hike the Foothills Trail, the Appalachian Trail, and the mountains of New Mexico.
 * Since working as a tour guide for [Marshgrass Adventures](http://www.marshgrassadventures.com/) I am on the water any chance I get, both for excitement like the Nantahala and the Colorado River and as a chance to explore the wildlife of the Everglades and local lakes.
+
+<script src="/js/progressbar.js"></script>
+<script src="/js/experienceBars.js"></script>
+
+<script>
+	var expByLanguage = {
+	    C: "Coursework and Projects included parallel programming through threads and forks, structure-based design, n-dimensional pointers, distributed programming using OpenMP and MPI, <a href='https://github.com/30percent/InProcessMultiThreading'>linux library shims</a>, <a href='https://github.com/30percent/C-Translation'>code-translation</a>, and image processing.",
+	    Java: "Coursework included TCP and UDP communication, parallel programming through threads and forks, and OOP design patterns.",
+	    Python: "Object-Oriented design, sockets, and web-based servers using Django",
+	    PHP: "Database communication, AJAX support, and external API based programming",
+	    Javascript: "External API based programming, JSON parsing, interactive display, and AJAX support",
+	    HTML: "Adaptive layouts, design through templating"
+	};
+	$(window).load(function() {
+		$(".experience").each(function(){
+			(typeof this.dataset.name !== 'undefined' && (typeof expByLanguage[this.dataset.name] !== 'undefined')) ? expDef = expByLanguage[this.dataset.name] : expDef = "";
+			createExpBarForDiv(this, expDef);
+		});
+	});
+</script>

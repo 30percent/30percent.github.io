@@ -16,7 +16,7 @@ paginate_path:		"project/page:num"
 excerpt_separator:	<!--postbreak-->
 
 # Build Settings
-highlighter: true
+highlighter: pygments
 
 # Assets
 #
@@ -46,8 +46,8 @@ nav_list:
   Home: /
   About: /about/
   Archive: /archive/
-  Resume: /resume/
   InterviewQs: /interview/
+  #Resume: /resume/
 
 archive: /archive/
 
