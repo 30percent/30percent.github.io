@@ -16,8 +16,8 @@ paginate_path:		"project/page:num"
 excerpt_separator:	<!--postbreak-->
 
 # Build Settings
-#highlighter: pygments
-highlighter: true
+highlighter: pygments
+#highlighter: true
 
 # Assets
 #

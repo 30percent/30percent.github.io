@@ -13,7 +13,15 @@
               {{ content }}
               </div>
           </div>
-          {% include sidebar.html %}
+          {% if page.nosidebar == null %}
+            {% include sidebar.html %}
+          {% else %}
+            <style>
+              #content {
+                width: 100%;
+              }
+            </style>
+          {% endif %}
         </div>
       </div>
         {% include foot.html %}

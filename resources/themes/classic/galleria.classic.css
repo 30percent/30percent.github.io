@@ -13,18 +13,15 @@
 }
 .galleria-theme-classic .galleria-stage {
     position: absolute;
-    top: 10px;
+    top: 2.5em;
     bottom: 60px;
     left: 10px;
     right: 10px;
     overflow:hidden;
 }
 .galleria-theme-classic .galleria-thumbnails-container {
-    height: 50px;
-    bottom: 0;
-    position: absolute;
-    left: 10px;
-    right: 10px;
+    height: 6em;
+    margin: 0 auto;
     z-index: 2;
 }
 .galleria-theme-classic .galleria-carousel .galleria-thumbnails-list {

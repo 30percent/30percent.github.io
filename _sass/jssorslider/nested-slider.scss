@@ -1,0 +1,116 @@
+/* jssor slider bullet navigator skin 03 css */
+/*
+.jssorb03 div           (normal)
+.jssorb03 div:hover     (normal mouseover)
+.jssorb03 .av           (active)
+.jssorb03 .av:hover     (active mouseover)
+.jssorb03 .dn           (mousedown)
+*/
+
+$slider-width: 50em;
+$slider-height: 50em;
+
+//navigation bar
+.jssorb03 {
+    position: absolute;
+
+    div, div:hover, .av {
+        position: absolute;
+        /* size of bullet elment */
+        width: 21px;
+        height: 21px;
+        text-align: center;
+        line-height: 21px;
+        color: white;
+        font-size: 12px;
+        background: url(/images/b03.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    div {
+        background-position: -5px -4px; 
+    }
+
+    div:hover, .av:hover {
+        background-position: -35px -4px;
+    }
+
+    .av {
+        background-position: -65px -4px;
+    }
+
+    .dn, .dn:hover {
+        background-position: -95px -4px;
+    }
+}
+
+//arrow navigation
+.jssora12l, .jssora12r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 30px;
+    height: 46px;
+    cursor: pointer;
+    background: url(/images/a15.png) no-repeat;
+    overflow: hidden;
+}
+.jssora12l { 
+    background-position: -16px -37px; 
+    top: $slider-width / 2;
+    left: 0;
+}
+.jssora12r { background-position: -75px -37px; 
+    right: 0;
+    top: $slider-width / 2;
+}
+.jssora12l:hover { background-position: -136px -37px; }
+.jssora12r:hover { background-position: -195px -37px; }
+.jssora12l.jssora12ldn { background-position: -256px -37px; }
+.jssora12r.jssora12rdn { background-position: -315px -37px; }
+
+//container
+.slider_container {
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: $slider-width;
+    height: $slider-height;
+    overflow: hidden;
+
+    .loading {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        div {
+            position: absolute;
+            display: block;
+            top: 0px; left: 0px; 
+            width: 100%; height: 100%;
+        }
+        .load-back {
+            filter: alpha(opacity=70);
+            opacity:0.7;
+            background-color: #000; 
+        }
+        .load-fore {
+            background: url(/images/loading.gif) no-repeat center center;
+        }
+    }
+
+    .slides {
+        cursor: move;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: $slider-width;
+        height: $slider-height;
+        overflow: hidden;
+
+        .navi {
+            bottom: 10px; right: 10px;
+        }
+    }
+}
