@@ -11,7 +11,7 @@ tagline:			Mark Todd's Portfolio
 #baseurl:			http://30percent.github.io/
 
 #Postings
-paginate:			3
+paginate:			5
 paginate_path:		"project/page:num"
 excerpt_separator:	<!--postbreak-->
 
